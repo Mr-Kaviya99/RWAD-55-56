@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Layout 7</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <style>
+        body > section {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        body > section:nth-child(1) {
+            background: red;
+            left: 0;
+        }
+
+        body > section:nth-child(2) {
+            background: green;
+            right: 0;
+        }
+
+        body > section:nth-child(3) {
+            background: yellow;
+            left: 0;
+            bottom: 0;
+        }
+
+        body > section:nth-child(4) {
+            background: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+        body > div {
+            width: 150px;
+            height: 150px;
+            background: white;
+            position: absolute;
+
+        }
+
+        body > div:nth-child(5) {
+            border-bottom-right-radius: 100%;
+        }
+
+        body > div:nth-child(6) {
+            right: 0;
+            top: 0;
+            border-bottom-left-radius: 100%;
+        }
+
+        body > div:nth-child(7) {
+            left: 0;
+            bottom: 0;
+            border-top-right-radius: 100%;
+        }
+
+        body > div:nth-child(8) {
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100%;
+        }
+
+        body > article {
+            width: 20%;
+            height: 20%;
+            background: white;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        article > div {
+            width: 50%;
+            height: 50%;
+            background: red;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section > div {
+            width: 150px;
+            height: 150px;
+            background: white;
+            border-radius: 100%;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        section>div>aside{
+            width: 40%;
+            height: 40%;
+            background: red;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > section > article {
+            width: 20%;
+            height: 25%;
+            background: white;
+            position: absolute;
+        }
+
+        body > section:nth-child(1) > article {
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 100%;
+        }
+
+        body > section:nth-child(2) > article {
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 100%;
+        }
+
+        body > section:nth-child(3) > article {
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100%;
+        }
+
+        body > section:nth-child(4) > article {
+            bottom: 0;
+            left: 0;
+            border-top-right-radius: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <aside></aside>
+    </div>
+    <article></article>
+</section>
+<section>
+    <div>
+        <aside></aside>
+    </div>
+    <article></article>
+</section>
+<section>
+    <div>
+        <aside></aside>
+    </div>
+    <article></article>
+</section>
+<section>
+    <div>
+        <aside></aside>
+    </div>
+    <article></article>
+</section>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<article>
+    <div></div>
+</article>
+</body>
+</html>
